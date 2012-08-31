@@ -1,3 +1,5 @@
+p_begin = Time::now
+
 max_num = 1000000
 database = Array.new(max_num)
 
@@ -29,5 +31,10 @@ max_num.times do |i|
     end
 end
 
-puts "Greatest Collatz sequence under one million is #{gs_terms} terms long and starts at #{greatest_seq}"
+puts "Greatest Collatz sequence under one million is #{gs_terms} terms long" \
+    "and starts at #{greatest_seq}."
+
+p_end = Time::now
+
+puts "Run time = #{p_end - p_begin}s"
 
