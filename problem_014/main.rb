@@ -31,7 +31,7 @@ max_num.times do |i|
     end
 end
 
-puts "Greatest Collatz sequence under one million is #{gs_terms} terms long" \
+puts "Greatest Collatz sequence under one million is #{gs_terms} terms long " \
     "and starts at #{greatest_seq}."
 
 p_end = Time::now
